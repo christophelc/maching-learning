@@ -101,6 +101,9 @@ Description
 
 \begin_layout Standard
 Input: 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $x_{1},x_{2}$
 \end_inset
 
@@ -108,7 +111,10 @@ Input:
 \begin_inset Newline newline
 \end_inset
 
-Output:
+Output: 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $y_{pred}$
 \end_inset
 
@@ -117,6 +123,9 @@ Output:
 \end_inset
 
 Aggregation function:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $z(x_{1,}x_{2})=w_{1}x_{1}+w_{2}x_{2}+b$
 \end_inset
 
@@ -124,7 +133,7 @@ Aggregation function:
 \begin_inset Newline newline
 \end_inset
 
-Result: y
+Result: 
 \end_layout
 
 \begin_layout Standard
@@ -192,7 +201,7 @@ Loss function
 \end_layout
 
 \begin_layout Standard
-Let be m the number of observations.
+Let be m the number of observation.
  The Log loss is given by:
 \end_layout
 
@@ -209,6 +218,13 @@ Gradient descent
 
 \begin_layout Standard
 We want to minimize the loss function by adjusting (W, b) parameters:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nabla_{W}L$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -284,10 +300,6 @@ We have:
 \end_inset
 
 
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -343,35 +355,11 @@ Thus::
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align*}
 Z=X.W+b1_{m}\\
 A=\frac{1}{1+e^{-Z}}\\
 \end{align*}
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -401,28 +389,9 @@ f(z_{m})
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align*}
-L=-\frac{1}{m}(y^{T}log(A)+(1_{m}-y)^{T}log(1_{m}-A)\\
+L=-\frac{1}{m}(y^{'}log(A)+(1_{m}-y)'log(1_{m}-A)\\
 \\
 \end{align*}
 
@@ -431,31 +400,7 @@ L=-\frac{1}{m}(y^{T}log(A)+(1_{m}-y)^{T}log(1_{m}-A)\\
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align*}
 W_{t+1}=W_{t}-\alpha\nabla_{W}L
@@ -466,62 +411,11 @@ W_{t+1}=W_{t}-\alpha\nabla_{W}L
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{align*}
-b=b-\alpha\frac{\partial L}{\partial b}
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align*}
-\nabla_{W}L=\frac{1}{m}X^{T}(A-y)
+b=b-\alpha\frac{\partial L}{\frac{b}{}}
 \end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{eqnarray*}
-\frac{\partial L}{\partial b}=\frac{1}{m}(A-y)^{T}1_{m}
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 

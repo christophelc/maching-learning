@@ -284,10 +284,6 @@ We have:
 \end_inset
 
 
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -401,25 +397,6 @@ f(z_{m})
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align*}
 L=-\frac{1}{m}(y^{T}log(A)+(1_{m}-y)^{T}log(1_{m}-A)\\
@@ -431,31 +408,7 @@ L=-\frac{1}{m}(y^{T}log(A)+(1_{m}-y)^{T}log(1_{m}-A)\\
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align*}
 W_{t+1}=W_{t}-\alpha\nabla_{W}L
@@ -466,7 +419,7 @@ W_{t+1}=W_{t}-\alpha\nabla_{W}L
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
 b=b-\alpha\frac{\partial L}{\partial b}
@@ -477,31 +430,7 @@ b=b-\alpha\frac{\partial L}{\partial b}
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align*}
 \nabla_{W}L=\frac{1}{m}X^{T}(A-y)
@@ -512,16 +441,11 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 \frac{\partial L}{\partial b}=\frac{1}{m}(A-y)^{T}1_{m}
 \end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
