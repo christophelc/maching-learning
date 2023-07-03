@@ -27,6 +27,12 @@ python3 -m pip install jupyterlab
 ##pytorch
 python3 -m pip install torch torchvision torchaudio torchviz
 
+#h5
+python3 -m pip install h5py
+
+##panda
+python3 -m pip install pandas
+
 ##cython
 python3 -m pip install cython
 python3 -m pip install pycocotools
